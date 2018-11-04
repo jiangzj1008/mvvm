@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<span g-foo="name | upper | lower"></span>
+
+<script>
+    // 比如标签上的 name 是输入的值，upper 和 lower 是自定义的函数，要求实现这样的语法，name 会依次调用 upper 和 lower 函数
+    // 最后的结果是 var result = lower(upper(name))
+    //
+    //     <span g-foo="name | upper | lower"></span>
+</script>
+</body>
+</html>
